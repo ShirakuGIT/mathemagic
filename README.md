@@ -40,5 +40,23 @@ A simple rendering of the [conway's game of life](https://en.wikipedia.org/wiki/
 - SFML lib.
 - Ubuntu / Debian: `sudo apt-get install libsfml-dev`
 
+
 ![conway](/conway/conway_sim.gif)
+
+## Chapter 4: Diffusion-limited aggregation
+A simple rendering of the [Diffusion-limited aggregation](https://en.wikipedia.org/wiki/Diffusion-limited_aggregation) using C++ SFML library. [code](/dla/dla.cpp) 
+### High level implementation details:
+- wrap-around of walkers and correspondingly the cluster.
+- coloring done through random generation
+- execution: `g++ -o dla dla.cpp -lsfml-graphics -lsfml-window -lsfml-system`  
+
+### Future work
+- need to multithread
+- redundant cells should be avoided from checks
+  
+### Requirements:
+- SFML lib.
+- Ubuntu / Debian: `sudo apt-get install libsfml-dev`
+![dla](/dla/dla.gif)
+
 
